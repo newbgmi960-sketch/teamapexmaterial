@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(180deg, #100a1f 0%, #08040d 100%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #0b0710;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.logo .iqoo {
+    color: white;
+}
+
+.logo .esports {
+    color: #ff4500;
+}
+
+.bgis {
+    color: #ffd700;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+/* Timer Bar */
+.event-timer-bar {
+    background-color: #ff3300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    gap: 10px;
+}
+
+.timer-label {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.timer-value {
+    background-color: #000;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-family: monospace;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.9);
+}
+
+.subtitle-container {
+    background-color: #ffd000;
+    transform: skewX(-15deg);
+    padding: 8px 35px;
+    margin-bottom: 50px;
+    position: relative;
+    box-shadow: -6px 5px 0px #ff3300;
+    display: inline-block;
+}
+
+.subtitle {
+    transform: skewX(15deg);
+    color: #3e2600;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* Reward Card */
+.reward-card {
+    background-color: #111;
+    border-top: 2px solid #ff4500;
+    border-bottom: 3px solid #ffd700;
+    border-left: 1px solid #1a1a1a;
+    border-right: 1px solid #1a1a1a;
+    border-radius: 4px;
+    width: 280px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    margin-bottom: 40px;
+}
+
+.card-inner {
+    padding: 15px;
+    border-bottom: 1px solid #222;
+}
+
+.material-img {
+    width: 100%;
+    display: block;
+}
+
+.card-footer {
+    background-color: #111;
+    color: #e0ebf5;
+    padding: 12px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+}
+
+/* Button */
+.collect-btn {
+    background: linear-gradient(90deg, #ff4500 0%, #ffaa00 100%);
+    color: white;
+    border: none;
+    padding: 15px 50px;
+    font-size: 22px;
+    font-weight: 900;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transform: skewX(-10deg);
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.collect-btn span {
+    display: inline-block;
+    transform: skewX(10deg);
+}
+
+.collect-btn:hover {
+    transform: skewX(-10deg) scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 69, 0, 0.5);
+}
+
+.collect-btn:active {
+    transform: skewX(-10deg) scale(0.95);
+}
