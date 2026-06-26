@@ -6,7 +6,11 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(180deg, #100a1f 0%, #08040d 100%);
+    background-image: url('assets/background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
     min-height: 100vh;
     display: flex;
